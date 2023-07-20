@@ -1,13 +1,12 @@
 import mongoose from "mongoose";
-import z from "zod";
 
 const UserSchema = new mongoose.Schema({
-    username: { type: z.string(), required: true },
-    email: { type: z.string(), required: true },
+    username: { type: String, required: true },
+    email: { type: String, required: true },
     authentication: {
-        password: { type: z.string(), required: true, select: false },
-        salt: { type: z.string(), select: false },
-        sessionToken: { type: z.string(), select: false }
+        password: { type: String, required: true, select: false },
+        salt: { type: String, select: false },
+        sessionToken: { type: String, select: false }
     },
 });
 
