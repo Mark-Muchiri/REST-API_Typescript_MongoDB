@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 const server = http.createServer(app);
 
 server.listen(8080, () => {
-    console.log('server running on http://localhost:8080/');
+    console.log('hey 😇 👋 the server running on http://localhost:8080/ ✅');
 
 });
 
@@ -28,4 +28,3 @@ const MONGO_URL = 'mongodb+srv://muchirimark2:Lhi6vavKcPy6fmt8@cluster0.phvqsi8.
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 mongoose.connection.on('error', (error: Error) => console.error(error));
-
